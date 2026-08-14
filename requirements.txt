@@ -1,0 +1,18 @@
+# SPID: Security Principle Instantiation Detector
+#
+# Tested with Python 3.10 on Linux with CUDA 11.8.
+# Install with:  pip install -r requirements.txt
+
+torch>=2.0.0
+transformers>=4.40.0
+nltk>=3.8.1
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# Required only for principle detection (04_ and 05_), which loads
+# Meta-Llama-3-70B-Instruct in 4-bit NF4 quantisation.
+bitsandbytes>=0.43.0
+accelerate>=0.30.0
+
+# NLTK sentence data is fetched at first use. To pre-fetch:
+#   python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"

@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "SPID: A Security Principle Instantiation Detector for Security Explanation Text"
+message: "If you use this software, please cite both the software and the paper."
+type: software
+authors:
+  - family-names: Brown
+    given-names: Caitlin
+    email: caitlin.n.brown@durham.ac.uk
+    affiliation: Durham University
+  - family-names: Morisset
+    given-names: Charles
+    email: charles.morisset@durham.ac.uk
+    affiliation: Durham University
+repository-code: "https://github.com/xsec-tools/spid"
+abstract: >-
+  SPID is a Security Principle Instantiation Detector for security explanation
+  text. It labels each sentence-level unit of an explanation with the Basin et
+  al. design principle it instantiates, abstaining when the text only describes
+  a mechanism. A unit instantiates a principle when it argues that the design
+  property the principle names improves security, not merely when it mentions a
+  related concept. The tool combines a fine-tuned Claims-Evidence classifier
+  with a three-stage principle detector built on Meta-Llama-3-70B-Instruct.
+keywords:
+  - explainable security
+  - security design principles
+  - argument mining
+  - natural language processing
+  - security explanation
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "SPID: A Security Principle Instantiation Detector for Security Explanation Text"
+  authors:
+    - family-names: Brown
+      given-names: Caitlin
+      affiliation: Durham University
+    - family-names: Morisset
+      given-names: Charles
+      affiliation: Durham University

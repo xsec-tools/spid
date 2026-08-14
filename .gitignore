@@ -1,0 +1,21 @@
+# Model weights are distributed separately, see README
+models/
+*.safetensors
+*.bin
+*.pt
+
+# Pipeline outputs written by the scripts.
+# Note: data/output/ holds the recorded results reported in the paper and IS tracked.
+results/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db

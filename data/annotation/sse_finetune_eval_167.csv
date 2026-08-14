@@ -1,0 +1,257 @@
+text,label
+"Please see the link https://auth0.com/docs/get-started/authentication-and-authorization-flow/mobile-device-login-flow-best-practices
+It may provide you with the details you require.",2
+Verifiable builds only guarantee that a binary matches the source code.,0
+Users still would not know whether these binaries actually run on the server.,0
+"technically, yes it's possible
+but you'd have to write all the software yourself or pay some sketchy black hats to do it
+or, like, be the NSA, man.",0
+"There are other ways to get someone's geolocation other than HTTP headers and preferred languages, for example, if you have JavaScript enabled on their site, they will be able to see your device's timezone and use that to tell where you're living.",2
+"To make sure, you can try it on Tor Browser (which enables the resist fingerprinting feature and changes your timezone to UTC0) and see if your geoloaction changes to the United Kingdom or not.",2
+"Note: if you're using Firefox or a firefox based browser, you can go to about:config and enable privacy.resistFingerprinting to change your timezone to UTC0 (resist fingerprinting does alot more to prevent fingerprinting, you can learn more about it here).",2
+"Some methods of 2FA, like TLS client certificates on smart cards, and WebAuthn (e.g., YubiKeys), are unphishable.",0
+"If you use such a method to log in to a phishing site, it won't be able to pass your credential to the real site to impersonate you.",0
+Browsers are the number one infection vector.,0
+"Even if you have an up-to-date browser and an antivirus, there can be weaknesses that can be exploited:
+
+a vulnerability in the browser that has not been patched yet
+a vulnerability in a browser plug-in
+
+So, the blanket answer is that the ""worst case"" is a possibility.",0
+That's why companies are spending millions to come up with measures to protect even the modern browser from attacks.,0
+"By the way, pressing the spacebar is equivalent to clicking on something.",0
+"Use Passkey or U2F/FIDO2/WebAuthN MFA âÃÃ® those will only work with the correct domain, not with a lookalike, and donâÃÃ´t give the attacker credentials that they can pass on to the real website.",2
+"As long as you did not run any files on your computer, you are safe...",0
+Your AV probably saw the malicious source code and thought that the site is a virus...,0
+Deleting 3rd party tracking cookies on browser exit prevents cross-session tracking.,0
+Not accepting them in the first place prevents cross-tab tracking.,0
+The former is a weaker protection than the latter.,0
+DEP (NX) is a per-process setting.,0
+"If the EXE opts in, or if the default is to use DEP and it doesn't explicitly opt out, then the process will be protected regardless of any DLLs or other library modules.",0
+"Note that this is different from ASLR, which is a per-module setting.",0
+"So even if you can't evade DEP directly, you can use return-oriented programming / return-to-libc with gadgets from any non-ASLR modules to gain arbitrary code execution anyhow (assuming, of course, you have the necessary memory corruption vulnerabilities).",0
+"It turns out, to see the interaction with SAM and SECURITY registry hives, even in a shadow copy, you just need to enable SAM auditing in Group Policy.",0
+You are using the wrong syntax to specify the wordlist.,0
+There should be an equals sign = between --wordlist and the name of the wordlist.,0
+It all comes down to your risk tolerance in regard to session length.,0
+"Google, Twitter, and Github have apparently made a risk-based decision to implement a combination of advanced security controls, which require a serious investment in appropriate infrastructure, for mitigating the risk of session hijacking (most of which you mentioned in your question).",2
+The risk of session hijacking may be deemed acceptable to gain improved application usability.,0
+A better user experience that doesn't automatically log out the user after a short time has apparently been assessed by these corporations to be a more valuable business asset than the risk of session hijacking threats with these advanced security controls in place.,0
+"That's not to say that ignoring session timeout directives is safe, especially if your web application is not built with these risk mitigation features.",0
+The question of how long a session to allow will again depend on your risk tolerance level.,0
+It's important not to assume that other's risk-based priorities would apply to your application.,0
+"This is taken from the Rubber Ducky description page:
+
+The USB Rubber Ducky injects keystrokes at superhuman speeds, violating the inherent trust computers have in humans by posing as a keyboard.",0
+"This is taken from the Bash Bunny description page:
+
+Simultaneously mimic multiple trusted devices to trick targets into divulging sensitive information without triggering defenses.",2
+"While Bash Bunny is arguably more ambiguous in what it actually does, it is a far more capable device.",0
+"Aside from emulating a keyboard, it can also be one of the following:
+
+Serial Device
+Ethernet Device
+USB Mass Storage
+HID (Human Interface Device)
+
+You can find more information about possible attack vectors of the Bash Bunny in the Bash Bunny Payload Development Documentation.",2
+To answer your follow-up question: It depends on the payload you write.,0
+"For example, this payload launches a reverse shell, simply by starting a new hidden PowerShell instance, and then creating a reverse shell.",2
+"It should be rather quick (read, under a minute) before you have a reverse connection.",0
+You don't need to keep the Bash Bunny plugged in after a connection has been established.,0
+With the CSP you have the freedom to allow inline styles or not.,0
+The purpose of not allowing inline styles is so that the user can not override the styling in their browser.,0
+But you can use a nonce to protect the inline style from being tampered with.,0
+"On the other hand, it is only a style, not code.",0
+I don't sweat over it much.,0
+"You can use a nonce-source to only allow specific inline style blocks:
+Content-Security-Policy: style-src 'nonce-2726c7f26c'
+
+You will have to set the same nonce on the  element:
+<style nonce=""2726c7f26c"">
+ #inline-style {
+   background: red;
+ }
+</style>
+
+
+You can also use a hash. Reference developer.mozilla",2
+"PGP (generically) can encrypt a message to multiple publickeys; this was originally intended for emails to multiple recipients but can be used to include yourself, and GnuPG has an option to include yourself that can be configured to do so automatically, see --encrypt-to in https://www.gnupg.org/documentation/manuals/gnupg/GPG-Key-related-Options.html#GPG-Key-related-Options .",2
+"Commandline gpg by default displays the keyid and userid used to decrypt (or verify) a file, and when it prompts for the passphrase on a privatekey it tells you which key it's asking for; these would show the key being used to decrypt your message to be your own key.",0
+"If you're using one of the many different GUI frontends, it may show this information differently or not at all; you'll have to be more specific about what you're using.",0
+"See PGP question decrypting my own message from 2 days ago
+Does OpenPGP encryption mean that not even I can see my data? and https://superuser.com/questions/1389024/gpg-difference-encrypt-to-and-recipient .",2
+"To expand on Sjoerd's answer:
+
+The original crypt(3) used DES, and used a very short 2-byte salt (it actually only used 12 bits of that), which was included as the first two bytes of the result, before the actual hash value:
+salt: salt string: value -> sagZ785I5/e5E
+
+So in the output of crypt, sa is the part of the salt actually used, and the rest gZ785I5/e5E is the actual hash.",2
+"This allows one to manipulate and store a single value, but it actually contains both the salt and the hash.",0
+"salt: saZZ string: value -> sagZ785I5/e5E
+
+You see here that anything after the first 2 bytes of the salt is ignored.",2
+"So if I give the full ""hashed"" password (i.e.",2
+"the output of crypt which actually includes the salt), I get the same value:
+salt: sagZ785I5/e5E string: value -> sagZ785I5/e5E
+
+
+In some implementations, this was latter expanded to an ""extended"" crypt (salt beginning with _) with takes a longer ""salt"" which is actually an iteration count and the salt itself.",2
+"But the principle was retained:
+salt: _AAAAAAAA string: value -> _AAAAAAAAa05by8Rlm06
+
+Again, you see that the output of crypt(3) starts with the value of the ""salt"", followed by the actual hash.",2
+"If we re-hash the input with the output, we get the same result:
+salt: _AAAAAAAAa05by8Rlm06 string: value -> _AAAAAAAAa05by8Rlm06
+
+
+In most modern implementations, this was later expanded again in a more flexible format of the form $<id>$<settings>$, where id gives the type of hash (support varies).",2
+"In all cases, when the result is to be stored as a single value, the output always starts with the $<id>$<settings>$ provided, so one can:
+
+find what type of hash one needs to use
+provide the right settings and salt
+
+In many implementations, this is completely transparent: just provide the stored ""hash"" and the entered password, and it will be able to do all the magic (as long as that implementation supports the hash type that was used originally).",0
+But you know the salts.,0
+You could simply run a process over your hashes to compare to a password list in an offline brute-force approach.,0
+"Trying to crack your own user's passwords is a problem, though.",0
+"You end up knowing the user's passwords, which creates a problem for you.",0
+That's why a check on the user-side and when the user is still in control is better.,0
+It puts the responsibility on them and not you.,0
+"Once you know the user's password, you need to somehow explain why you know the password, which would be an uncomfortable conversation if I was one of your users.",0
+"No, the uni cannot monitor unrelated networks.",0
+"When you configure your device to trust a new root certificate, that certificate holder can issue HTTPS certificates for any website, and the HTTPS certificates will be trusted by your device.",0
+This would allow them to impersonate websites if the root certificate holder is in between you and the website you want to access (MITM attack).,0
+"This is the case within your uni network, as the university can intercept any connections.",0
+This is also the case when you use your uni VPN.,0
+"This is not the case on other networks, as the uni has no way to intercept your traffic.",0
+Your phone wouldn't know on which networks that root certificate could be used to intercept your traffic.,0
+It's worth noting that not all certificates are such root certificates.,0
+"It is also possible to use certificates solely for authentication when connecting to a network, without making MITM attacks possible.",0
+This depends on how you added the certificate to your device.,0
+"The password manager Bitwarden has a ""Send"" feature that allows the sender to create a ""Send"" record that has text secrets to be shared.",0
+The sender then sends a generated URL to the receiver.,0
+"There are options to protect it with a password, to limit the number of views, to limit the time, etc.",0
+Creating such an account and using this feature is free.,0
+"Like other methods, you can send the link in one encrypted channel, and pass the password in another channel.",0
+"help article: https://bitwarden.com/help/about-send/
+blog (marketing) post: https://bitwarden.com/blog/introducing-bitwarden-send-for-secure-sharing/
+
+I am a user, and am not an employee.",2
+AWS Security Group is a Allowed List based host firewall (attached to ENI).,0
+"Therefore, if you have not added a firewall rule to allow traffic to this specific port (+ from specific IP range) in your AWS Security Group(s) attached to the relevant resource, AWS SG will block that port.",2
+"From https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html
+
+""Characteristics of security group rules
+
+You can specify allow rules, but not deny rules. ...",2
+"When you associate multiple security groups with a resource, the rules from each security group are aggregated to form a single set of
+rules that are used to determine whether to allow access.""",0
+How do I differentiate between those that are able to MITM me and those that arenâÃÃ´t?,0
+Are there any signs/description on the usage of the certificate that makes them distinct?,0
+CA certificates usable for MITM and usable as trust anchor in WiFi authentication are not really different.,0
+"The difference is how these certificates are installed in the device: If they are specifically installed for authentication against a WiFi network only, then they will be only used for this purpose.",0
+If they are instead installed as a general purpose CA then they will also be used as a trust anchor in web traffic and other TLS connections and thus can be used for actively MITM TLS traffic.,0
+But note that in your specific case you are not dealing with a CA certificate at all.,0
+You are only asked to install the leaf certificate specific for your current network.,0
+"This can be seen from:
+
+Certificate Authority: No
+
+A CA certificate would have a ""Yes"" here and only a CA certificate is able to issue other certificates as needed in active TLS MITM attacks.",0
+"If you really wanted to do this, you could have extra columns in your database.",0
+"Password_Hash: CHAR(40)
+Uses_Uppercase: Bool
+Uses_Lowercase: Bool
+Uses_Numbers: Bool
+Uses_Symbols: Bool
+Uses_More_Than_8_Chars: Bool
+
+But, as others have pointed out - this does create some risk.",2
+"If an attacker gets access to your database table, they can select all the passwords where Uses_More_Than_8_Chars is False and spend their effort brute forcing them.",0
+Or they can perform dictionary attacks only on lowercase passwords with no numbers and symbols.,0
+"A better way might be to alert the user that their password is weak, and ask if they accept liability.",0
+"If so, store a column on the User table Accepts_Weak_Password_Liability: Bool.",0
+"But, again, that's a signal for an attacker.",0
+"And, in any case, it doesn't help if the user has a complex password which they use everywhere.",0
+Or if they have it on a post-it.,0
+Or if they accidentally paste it somewhere.,0
+End-to-end encryption means that the middle man cannot see anything.,0
+"Even if you own the IRC server, it is not end-to-end encrypted.",0
+"It's probably safer than using a public IRC server, but not as safe as using OTR or another client-side text encryption plugin that supports IRC.",0
+"The fact that the IRC server has access to your communications means it is, by definition, not end-to-end encrypted.",0
+Just because you trust the server doesn't change this.,0
+"This problem is actually in 3 parts:
+
+audit trail with privacy, integrity and authorisation and for each step.",0
+"Full transmission and receiving of files over a (inter-)network
+Independent verifiable evidence of the result.",0
+"The first part is simple, use TLS 1.3 on each connection, together with a encryption at rest system to store the data in (such as AWS S3 or minio could provide)
+The second part requires that you make (multiple) hashes of the data, even before the first transmission and verify at each step the hashes still check out (you need the hashes in your audit trail too)
+The last part is the hardest, and best done through the use of Time-Stamp protocol and a Time-Stamp authority to stamp both the data itself and 1 of the audit hashes.",0
+This will ensure you can than later still provide evidence of what data was received in a tamper resistant way.,0
+"Be advised, this is one of the hardest solutions in IT, so:
+
+donâÃÃ´t roll your own solution unless you must (as in use as many audited libraries as you can)
+Have your code audited by at least 2 independent parties.",0
+re audit this code regularly.,0
+"""Group temporal key is used to encrypt all broadcast and multicast traffic between an access point and multiple client devices.",0
+"GTK is the key which is shared between all client devices associated with 1 access point.""",0
+"""Pairwise Transient key is used to encrypt all unicast traffic between a client station and the access point.",0
+"PTK is unique between a client station and access point.""",0
+"https://www.wifi-professionals.com/2019/01/4-way-handshake
+Multicast is used to send messages to multiple devices while unicast is used for point-to-point traffic.",2
+"Every client/station connected to the AP shares the same GTK, but all have a unique PTK.",0
+"My question is, what are some guidelines that individuals and organizations can follow to ensure they don't become a target of such an attack?",0
+One way to avoid being the target is to not do anything that would spike the interest of intelligence agencies.,0
+"It won't prevent you from being caught in the collateral damage of the agencies targeting somebody around you though...
+More seriously, for an individual, there is no easy way to detect or thwart such an attack, as the resources of the attacker far outmatch your own.",0
+An intelligence agency won't just add a root CA to computer if they have a chance to tamper with your hardware.,0
+That would have too easy to detect/mitigate.,0
+They will likely install some hardware backdoor and/or persistent malware.,0
+"You could reinstall the operating system, but this wouldn't prevent advanced firmware-resident malware from reinfecting you.",0
+"You could check the certificate fingerprints, but the malware would simply hide the fingerprint of the malicious certificates and instead display the fingerprint of the real certificate.",0
+The cost of detecting and removing any hardware backdoors is prohibitively high.,0
+An individual's best bet against such an adversary is to not get compromised hardware in the first place.,0
+"Instead of ordering the laptop online (which makes it very convenient for a TLA to intercept and modify), purchase it from a brick and mortar store in cash.",0
+"Additionally, make sure the store is some distance away from where you live (far away enough that the adversary cannot easily predict you will go there).",0
+You won't be able to tell what the key is just by having plaintext/ciphertext pairs.,0
+Determining the key requires mounting a known-plaintext attack (KPA).,0
+Strong ciphers like AES are specifically designed to be resistant to that kind of attack.,0
+Even weaker ciphers that are vulnerable to it may require trillions of gigabytes of known plaintext.,0
+"""Several tuples"" is not enough for even the worst ciphers.",0
+Determining the algorithm that is used is likewise not feasible.,0
+"Even if you could choose the plaintext that are to be encrypted, you cannot distinguish the ciphertext outputs from random data if the cipher is IND-CPA secure.",0
+"All modern, secure ciphers are IND-CPA secure.",0
+"Other than that, you could only determine information about the cipher if the format used for encryption gives it away (e.g. a header).",0
+"As for determining the IV, this actually might be very easy, depending on the system.",0
+"If the plaintext is encrypted with a block cipher with n-bit blocks in, say, CBC mode, then the first n bits of ciphertext is usually the IV.",0
+"Of course, if the IV is randomly chosen, you won't be able to tell if it actually is the IV.",0
+"Often when considering if something is a good idea or not in information security, there is no clear ""yes"" or ""no"" answer.",0
+You have to consider what benefits and detriments a given solution presents.,0
+"In this case, your current state has a relatively large risk of compromise - Employees can be fired for malfeasance, then turn around and log into your tool and do ""bad stuff"".",0
+"While email 2FA is not a perfect solution, it does not present new risks compared to single-factor authentication.",0
+"* You should think about things like ""What if the employee has a legitimate login request, but can't access their email?""",0
+"and other new edge cases this situation creates, but there is nothing inherently wrong with your proposal.",0
+"You have to consider whether the loss of convenience, simplicity, and efficiency is worth the increased security, and no one online can do that calculus for you.",0
+"You should weigh the added complexity against the gain in security, as well as consider if things like simple policy controls will solve the problem.",0
+"(Sometimes you just need to have a conversaion with your customers, and sometimes it's hopeless and it's easier to just do something like your proposed solution).",0
+"*: assuming you implement it properly, of course.",0
+Anything can be a horrible idea if done wrong.,0
+There is no such guarantee.,0
+It depends on the browser implementation.,0
+"See the RFC:
+
+The 302 (Found) status code indicates that the target resource
+resides temporarily under a different URI.",2
+This means that the response body should not contain the expected resource.,0
+But actually there is no explicit restriction for the body.,0
+"The only statement about the body is following:
+
+The server's    response payload usually contains a short hypertext
+note with a    hyperlink to the different URI(s).",2
+Thus body doesn't have to be empty and technically can contain also JavaScript.,0
+"Firefox, Chrome, Edge don't interpret the body.",0
+But there are many browsers based on the same code.,0
+"For instance, these are the most known browsers based on Chromium.",0
+There is no guarantee that every browser keeps the logic for HTTP 302 unchanged.,0

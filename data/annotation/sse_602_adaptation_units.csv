@@ -1,0 +1,727 @@
+text,unit_type
+It depends of the supported language behind the application.,Claim
+"For instance, the XMLInputFactory you are using is one the library rule available for the Java XML parsers.",Evidence
+"The main objective is to disable DTDs, it basically consists of the primary defense against this attack.",Claim
+You can find a thorough reference here from OWASP.,Evidence
+FM isn't encrypted and everything transmitted over FM can be listened by anyone close enough.,Claim
+"If you are concerned, you could use a Bluetooth receiver with line-out output.",Claim
+There are several options on your favorite online shop.,Claim
+"Per an answer to a post on the Akamai Community site:
+
+AkamaiGhost stands for Akamai Global Host (also known as Edge Server, or Edge node)
+
+Based on the information provided and the definition, I'd say this is a CDN server.",Evidence
+The video in the references shows examples of using cURL to troubleshoot.,Evidence
+The cache server it's hitting are Akamai GHost's.,Claim
+"References
+Akamai Community Question
+Using cURL to Troubleshoot Akamai Requests",Claim
+"No, this is not normal at all.",Claim
+"If you need to give them access, create a new account for them that exists only for as long as they need access.",Claim
+Only give them as much access as they need.,Claim
+But they should have resource monitoring from the VPS side and shouldn't need local access to the server.,Claim
+"For a website, the sender knows the unencrypted data, and encryption can be set up spontaneously when I request the website from the server.",Claim
+For an email from arbitrary A to arbitrary B you donâÃÃ´t want the server to be able to read the email.,Claim
+"And A and B cannot communicate because all that A has is Bs email address; it cannot find Bs computer (and there may be more than one), and the computers are often not turned on and connected to the internet at the same time.",Claim
+So lots of things that https can take for granted are not there for email.,Claim
+They have no business monitoring your personal device off-hours.,Claim
+So you need to contact them to get this software off your personal device.,Claim
+There is no reason you should get in trouble (unless what you did was illegal in your country) but you have plenty of reason to be upset with them for over-reaching with their installs and preventing personal use of your device.,Claim
+"They might have informed you about this install, but as you can see, it's affecting the use of your personal device, so at the very least, it needs re-configuring.",Claim
+"I'd recommend exporting the old key, saving it encrypted somewhere & only re-importing it when you need to use it for those manual operations.",Claim
+"It's also possible, and maybe more convenient, to remove the old key from the main system keyring & import it into another context using the homedir option.",Claim
+The answer depends on the way the whitelist is implemented on the firewall.,Claim
+"Is the source IP of the Scanner whitelisted, then this will take precedence to the ICMP drop.",Claim
+I would recommend checking the order of the firewall rules and if the the whitelist rule comes before the drop rule.,Claim
+The hash and salt are both in the value column.,Claim
+"After Base64 decoding, the first 32 bytes are the hash, and the rest is the salt (in your case, it's the ASCII string seldemer).",Claim
+This is not currently possible.,Claim
+I created an issue to request it: Possibility to block all javascript: URLs Â¬â Issue #658 Â¬â w3c/webappsec-csp,Claim
+KeyCloak creates session cookies based on a user's login information and status.,Claim
+This can be used to provide authN when a user is redirected to the SSO login page after already having an active session - allowing them to be signed in (and grant consent) without having to re-enter credentials.,Evidence
+"With a private key in a file, there is nothing preventing it from being copied, extracted, or sent to a third party.",Claim
+"It's also possible to have private keys in a TPM, HSM, or hardware key.",Claim
+These make it possible to use private keys without exposing them.,Claim
+"Your approach generally seems ok to me; it is conceptually similar to the well-used approach of issuing an encrypted JWT session token (aka ""JWE"") which contains all the user's metadata, but in encrypted so the user cannot read it.",Claim
+"One thing to consider is session fixation: once you issue one of these encrypted tokens, does that mean the user can continue to make API calls forever, or do you have a way to expire or invalidate the token and force the user to log in again?",Claim
+"Common approaches are to put an expiry timestamp inside the token (typically ~15 mins - several hours after it was issued), or tie the token to a login session for example by embedding the sessionID inside the encrypted token and only accept the token for as long as that session is active.",Evidence
+"I see in your fernet link that it stores the generation time in the ciphertext, and that its decrypt() has a time-to-live param, so I guess putting an expiry time on the tokens is trivial to do with fernet :)
+ decrypt(token, ttl=None)",Evidence
+There are many different things that could possibly be logged.,Claim
+"They are certainly able to define things how they want for advertising purposes; it sounds like while they log the who and when, they don't actually log what sites you are visiting (which is probably the privacy concern for most users).",Claim
+"However, ""no-log"" would probably imply to most that absolutely zero logs for anything are kept, which is clearly not the correct interpretation here.",Claim
+I don't believe there is any way in the current way TOTP or SMS codes are implemented of preventing man in the middle attacks.,Claim
+TOTP codes are setup once and from then on are independent of the originating web site.,Claim
+"Two factor using TOTP or SMS is better than nothing, but are easily bypassed by tricking the user into using a fake intermediary site.",Claim
+TOTP and SMS codes as security are dead ends.,Claim
+Some would argue they provide a false sense of security by lowering a users inhibitions from interacting with a MITM site.,Claim
+Try to find out which domain name(s) could be hosted on that server.,Claim
+"Then you can attempt a zone transfer (either plain old AXFR or ""DNSSEC zone walking"").",Claim
+"Most of the time, zone transfers won't be allowed, but not always so you should try.",Claim
+Otherwise there are brute force tools for this purpose.,Claim
+The default page shown when accessing the webserver by IP address may provide some clues.,Claim
+Also try https on port 443 and inspect the presented certificate.,Claim
+Try to trigger errors on the server (4xx and 5xx range).,Claim
+Look at the response headers carefully. The cookies too.,Claim
+Look at the HTML source code - there may be embedded resources (images etc) exposing domain names in URLs.,Claim
+I believe it's just a feature that they're giving to their users.,Claim
+"The link also says the below:
+
+For HDD Passwords: Share the Service Tag and the hard drive serial number that is mentioned at the top of the screen.",Evidence
+"Only if you give them the service tag and hard drive serial number, perhaps only then they would be able to give you the reset password.",Claim
+"Let's say after getting the password, you don't want anyone else to access your hard disk, you could probably buy a new hard disk.",Claim
+"I'm assuming it would require a new reset password because the same link also says:
+
+The hard drive reset password is tied to the hard drive-serial number and not the computer Service Tag.",Claim
+"Of course, you can encrypt the disk using, say, Bitlocker, and I suppose even if someone is able to access your hard drive with the reset password, they wouldn't be able to get anything because the data is encrypted with your key.",Claim
+You can get lots of resources online on how FDE works.,Claim
+Even after performing a factory reset and wiping data it is sometimes possible to recover some data from a smartphone using specialised recovery software.,Claim
+"This is because a factory reset often doesn't completely erase all the data; instead, instead it marks the space as available for new data to be written over.",Claim
+"Until this space is overwritten, data can potentially be recovered.",Claim
+"Various tools exist that can attempt to recover this data, but the effectiveness depends on several factors, including the type of storage used in the smartphone and how good the reset process was.",Claim
+"This question is very much related, almost identical.",Claim
+The problem here is that he could deceive some user into installing your application through its link.,Claim
+Think for example about those tutorials of how to install any piece of software which usually includes doing a git clone/ download of the repo as it is very important to have a check on what you are actually installing.,Evidence
+"This is a very good tutorial about how to install Zsh: https://maxim-danilov.github.io/make-linux-terminal-great-again/
+But, if you have a look at the Install Oh My Zsh section you can see the following command:
+sh -c ""$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)""
+
+That command is basically running (through sh) everything of the script hosted in Github.",Evidence
+Of course in this case the source is trusty but that is not always the case.,Claim
+That is the reason why we should carefully review what we install always.,Claim
+"If you wanted to keep the drive mostly intact to keep it displayed, you should carefully open the case and remove the contents, which you can then dispose of securely through incineration.",Claim
+"Members of the military intelligence community would suggest using thermite for this purpose, as it is very thorough, and when done safely, many people report that it is a fascinating process to watch.",Claim
+"Grinding the contents to a powder should also prove effective, though it may involve a more labor intensive process and is not nearly as fun.",Claim
+"If you want to keep the drive in ""mint collector's condition,"" where someone inspecting the drive would not notice any tampering, then you will need to be able to write to the device normally.",Claim
+You would need to repeatedly write random data to the drive for several cycles.,Claim
+"If you can not write to the drive, then you can not ensure the data that is already contained on the drive would be impossible to recover while maintaining the drive in mint collector's condition.",Claim
+"If you are trying a VPN because they protect you against hackers, against sites tracking you, to have a faster connection or any other claims you saw on sponsored Youtube videos, don't.",Claim
+You don't need a VPN.,Claim
+"There are few reasons people need VPN:
+
+Remote Work: in this case the employer will provide a VPN, endpoint and everything, unless you are the one deploying the VPN and would know the specific VPN you will install.",Claim
+"Oppressive Countries: if you live on a country with harsh regulations for online habits, a VPN can help.",Claim
+"Using the wrong one, or not understanding what a VPN can protect and what it cannot can lead to serious consequences.",Claim
+Privacy: If you think your ISP is spying on you.,Claim
+"In this case, a VPN could help but you would have the VPN provider in the position of spy on you.",Claim
+DNS over TLS or DNS over HTTPS could help too.,Claim
+Pipes are a local form of communication.,Claim
+It would make no sense to encrypt them.,Claim
+Anything that can spy on traffic on a pipe could also spy on the processes themselves.,Claim
+Anonymous pipes are pretty safe in that there's very little risk of misconfiguring them.,Claim
+"Unlike named pipes, named sockets or network sockets, there's no external entry point (directory entry or network port) that you have to protect through permissions or firewalling.",Claim
+The only risk with an anonymous pipe is if your programs run an external programs: make sure you set the close-on-exec flag and you'll be good.,Claim
+(You say âÃÃºNo process is ever forkedâÃÃ¹ but that's not something you can fully count on: a library that you use might fork a process for its own purposes.),Claim
+Switching from pipes to network sockets with TLS would only make sense if you want to be able to run the two processes on different machines.,Claim
+"This would reduce the security of the communication, so you'd need TLS's protection to compensate.",Claim
+"It could increase the security of the processing, since a compromise of one half would not directly compromise the other half, but this is clearly not something you need since you'd be prepared to run everything in the same process if it was possible.",Claim
+"Ssh keys are stronger that passwords for 2 distinct reasons:
+
+There is no ""shared secret"" so the private key is never known by the server.",Claim
+"The server sends a challenge (a random value), the client encodes it with the private key, and the server validates it with the public key.",Claim
+"On the other hand, even if only a hash of the password is stored, the server does receive the plain text password and if it has been compromissed, it can steal the password
+
+They have much higher entropy than the average password.",Claim
+They are always generated by crypto software so we can expect them to be as close to random as possible.,Claim
+"On the other hand passwords that human can remember generally have a much more limited entropy and can be subject to social attacks (name of children of just the initials, name of a pet, etc.)",Claim
+Is it possible for an attacker to modify SNI value without endpoints finding it out? This is not possible.,Claim
+"Integrity protection of the TLS handshake, i.e.",Claim
+"protection against manipulating any parts of the handshake (including SNI), is part of all TLS versions and not specific to TLS 1.3.",Claim
+"The server (or any advanced hacker) can observe all components of the key exchange, except for some components that the sender and receiver kept private.",Claim
+"And because of these bits, neither server nor hacker can read your plain text messages.",Claim
+"Both can create a MitM attack, and the server can do it easier, where client A tries to connect to client B, but the server creates a connection client A to server, and a connection server to client B.",Claim
+"However, if client A can also talk to client B directly, and exchange the raw data that they sent, then between them they easily figure out that the encrypted data sent by A doesnâÃÃ´t match the encrypted data received by B.",Evidence
+Now I donâÃÃ´t have th expertise to do that.,Claim
+"But if WhatsApp did did a MitM attack, I bet someone would have created a setup where they test for this and would have found the MitM attack.",Claim
+I don't see the approach much different from using a randomly generated hash for filename.,Claim
+"The randomness can also be added with all the points you have mentioned (like user input, timestamp, etc...) to add a bit of difficulties for an attacker to guess.",Evidence
+"As other people have pointed out, if the attacker has any means of listing your directory, the random filename solution is cracked.",Claim
+"This would be better if you put user input in a database but that's also not sufficient, database can also be dumped.",Claim
+"I would suggest another layer of protection be added, just like Bitwarden's ""sending"" function (and lots of other sharing services):
+in your URL returned to user, there should be a ""hash"" property (not the cryptographic hash discussed above, but part of a URL, see this description), which is a symmetric key used to encrypt the user data before uploaded to server.",Evidence
+"This is done at client side, and from server side no one knows the content.",Claim
+"The URL looks like: https://example.org/<some random filename>/#48nJ5QjLoccM6rD9jmO2
+The random symmetric key after # is not sent to server from browser, and is a good place to keep the secret at user's side.",Evidence
+You could encrypt the drive with something like BitLocker (with automatic unlocking disabled) or VeraCrypt.,Claim
+"That way they wouldn't be able to access the contents without your encryption key (although they would likely find references to it on the main disk, including paths, filenames and maybe even cached copies of files).",Claim
+If you remove the drive letter as well (in Disk Management) then it won't be obvious from a quick look at Explorer that the second drive even exists.,Claim
+"It's certainly not foolproof, but would be enough to stop someone from having a quick look around.",Claim
+"But there's a risk that if they do have a slightly more in-depth look and it's clear that you're trying to hide stuff from them, then they may take actions based on that information (without knowing the contents).",Claim
+"If you really want to be safe (and assuming that VMs are out of the question because their software will detect them), the best thing you can do is to buy a new SSD (128GB should be fine, and they're cheap nowadays), put a clean install of Windows on there along with any software you need for the exam, and then wipe it as soon as you're done.",Claim
+It's a security feature for sure; it's good for data recovery if password is lost.,Claim
+"Dell has implemented further security controls to guard against misuse:
+
+When contacting Dell Technical Support, you are asked to confirm the information below for security reasons: Ownership of the computer.",Evidence
+Whether you are authorized to clear the password on the computer.,Claim
+"So to reset the password, you would need physical control and proof of ownership.",Claim
+"I assume that they have established reasonable parameters for proving ownership, and that the benefits of password reset outweigh the risks.",Claim
+It depends whether you're ever relying on the order number being secret.,Claim
+"For instance, do you use it as part of the authentication process if a user contacts your customer service, or do you display order details without requiring users to login on the website?",Claim
+"Additionally, if order numbers are predictable, that makes things like IDOR vulnerabilities easier to exploit (although that's a separate problem).",Claim
+There is also an information leakage angle with sequential order numbers.,Claim
+"If For instance, if I'm a competitor then I can place one small order every week/month/quarter with you, and that will tell me exactly how many sales you've made over that period.",Evidence
+"Instead of using custom user sign in, you can use android system API that can perform in-app authentication backed by Trusted Execution Environment (TEE).",Claim
+It supports both biometric and device credential authentication.,Claim
+"Your app's sensitive data should be cryptographically bound to the in-app authentication to ensure that even if the attacker compromises the OS, the app data cannot be decrypted.",Claim
+"To achieve this, you can use android keystore system to generate a new secret key which is kept inside TEE.",Claim
+This key is a primary (master) key that encrypts one or more keys that encrypt & decrypt app's sensitive data and auth token and are kept outside of TEE.,Claim
+TEE will not unlock the primary key until in-app user authentication is successful.,Claim
+See Require user authentication for key use.,Claim
+"Also, before providing data access, you must decrypt and verify auth token first provided by your web service to validate if the token is not expired and if the user is allowed offline access.",Claim
+You can use Android Jetpack Library for implementation.,Claim
+"I think a more robust solution would be:
+
+create a non-root user
+give that user sudo privileges for the one command you need.",Claim
+Optional: create a script that does the actual sudo call.,Claim
+give it an authorized_keys keys file (with or without the command - either to the script or directly to systemctl).,Claim
+"In your sshd_config file, you can also restrict access to that user to only one IP address.",Claim
+"Trying to connect from anywhere else would result in ""authentication failed"" even if the password and/or key are correct.",Claim
+Another unrelated side note: I see that you are using ed25519 keys.,Claim
+"ED25519 is not bad, but it is not FIPS-approved.",Claim
+"If you later try to further lock down your system and use FIPS mode (which is a good idea), ed25519 will be disabled.",Claim
+Changing this later would make a transition to FIPS more complex.,Claim
+I recommend ECDSA or good old RSA.,Claim
+"It doesn't seem necessary that you encode the token, especially in your case, since it would result to encode something twice.",Claim
+Oherwise anyone with access to a network might steal the token of a user.,Claim
+"After a lot of thought and research, I thought of an exploit to this method: evil.com hosts a phishing website with a form set to post an attacker-controlled ""old"" CSRF token to the session renewal endpoint.",Claim
+The user logs in like normal on the session renewal endpoint.,Claim
+Now the CSRF token has been set to an attacker-controlled value.,Claim
+Then the attacker can proceed with a normal CSRF attack.,Claim
+"Basically, the attacker has to do not one but two CSRF attacks, but it's exploitable nonetheless.",Claim
+"So, bad idea, don't do this.",Claim
+"For new code, obviously there would be no reason to do this anyway, there are better solutions.",Claim
+"Jury is still out on what to do instead for my particular situation where those solutions would require basically re-writing thousands of forms, but regardless this is not the way.",Claim
+"A hash only really gives assurance that the file you downloaded matches the one on the website, not who the author was.",Claim
+"So a digital signature using something like GPG (with your key publicly available elsewhere for verification) would be much better than a hash, because it provides some assurance that the binary was signed by you.",Claim
+If your key is signed by other reputable people that would also help.,Claim
+"Beyond that, if you're unwilling to share the source code for people to examine and compile themselves, it's not really a question of how to get people to trust the binary - it's a question of how to get them to trust you.",Claim
+"And that's a complicated question with lots of factors, including how well known you are, your reputation, whether you're anonymous or publicly linked to an individual/company, where you're from, etc.",Claim
+"But there's no simple answer, because if there was an easy way to make a binary look trustworthy then all the bad guys would do it too.",Claim
+"Explanation of stuff
+It's very unlikely that malware would be able to run on Windows and Linux, given that executable files for them are different, so it would need to be explicitly designed to infect Linux.",Claim
+"For viruses in the boot sector, it'd be harder to stop.",Claim
+"I wouldn't particularly worry about a virus in the BIOS, because the BIOS/UEFI is typically on a ROM, meaning it can't be changed, or an EEPROM, meaning you can change it, but you have to utterly erase it first.",Claim
+"Answer
+Try making a bootable Live Linux CD-ROM and booting into that.",Claim
+"No virus can change the contents of a CD-ROM once it's been burned, because it's a ROM.",Claim
+"Then, flash the Windows Install USB from the Live CD and then install from the almost certainly safe USB.",Claim
+Both Enter-PSSession and winrs use the WS-Man (WinRM) protocol over the same default ports (5985/5986). So thats that.,Claim
+"Enter-PSSession -ComputerName PC1
+-Enter-PSSession has detailed logging in the Windows event log.",Evidence
+-itâÃÃ´s highly visible to EDR solutions that are monitoring PowerShell.,Claim
+And it supports transcription and script block logging.,Claim
+"winrs -r:PC1 powershell
+-winrâÃÃ´s Logging is similar but oftem less detailed.",Evidence
+#NAME?,Claim
+"Both methods involve the same protocol, so network detections are similar.",Claim
+"But that said, Enter-PSSession might be easier to detect due to its ties with PowerShell.",Claim
+"In many cases, the entire HTTP request (not just the password) is padded, by virtue of the fact that the request is sent using SSL/TLS.",Claim
+"At the heart of SSL/TLS, symmetric AES encryption is used.",Claim
+AES requires blocks that are each 16 bytes in length.,Claim
+"So all requests must be padded to a length that is a multiple of 16 bytes, before they can be sent over SSL/TLS.",Claim
+"However, there are some exceptions to this, as pointed out by @forest and @nobody in the comments below.",Evidence
+"In general, it's fine to provide a signed manifest file with hashes instead of individual signed files.",Claim
+"Kernel.org, along with many other projects, do this, often by signing the output of something like sha256sum.",Evidence
+"If the key lives in a hardware security module, this can often have substantially better performance, especially when signing large files like software archives or ISOs, since typically the hardware security module has limited bandwidth and has to see all the bytes that are signed.",Evidence
+"It can also be more performant for the end user if they must verify many files at once, because verifying the signature is more expensive than a simple hash and that operation needs to be done only once instead of multiple times.",Claim
+"In the particular case you mentioned, which uses SHA-1, this isn't secure, because SHA-1 is subject to collisions, and so a malicious distributor could distribute two versions with the same hash, one which is benign and one which is malicious.",Evidence
+"In order for this approach to be secure, you need to use a cryptographically secure hash function, like one of the SHA-2, SHA-3, or BLAKE2 hash functions, and not something insecure like MD5 or SHA-1.",Claim
+"One aspect of SMS as 2FA authentication that I feel isn't as covered is the availability of the method itself; you don't need a wifi connection or a data plan to run a SMS 2FA setup, nor do you need a 2FA specific app to set it up.",Claim
+"If you're working from an Ethernet connection in a remote area that has cellular reception, but would be considered roaming in your current mobile plan, a single SMS message is a cheaper cost than the data plan enabling you'd otherwise need.",Claim
+"Furthermore, if the phone/SIM card is stolen, it's revocable - you simply set the system to never send to that number again, and there's nothing an attacker can do from that point onwards short of social engineering to get the number added again.",Claim
+"You may be wondering which option is more ""secure"" if you were to take the output and use it directly as a password in, say, a password field on a website.",Claim
+"In that case, it depends on the brute force attack.",Claim
+"A straightforward one that uses every possible input value for length n before moving on to length (n+1), of course the better answer is the longer one; the base64 version.",Claim
+"But you could also imagine brute force attacks that don't use really uncommon characters at all, in which case the ""raw"" one might never be cracked.",Claim
+There isn't a single correct answer here.,Claim
+"Additionally, there are a couple problems:
+
+Using the ""raw"" output isn't ""short with big charset"" -- it's likely got bytes in it that don't represent valid character data at all.",Claim
+"You need to encode the data in some way to actually turn it into a ""charset"".",Claim
+JWT keys aren't used like passwords on a website.,Claim
+"As the other answers correctly state, JWT encryption and signing algorithms use the number directly, not the encoded number.",Claim
+IndexedDB is an specification supported by many browsers.,Claim
+"So, while one browser may be deleting it securely others may do differently.",Claim
+I think most browsers use SQLite as backend for their indexedDB implementation.,Claim
+For instance you can view here Firefox implementation of indexedDB.,Evidence
+SQLite doesn't implement secure deletion of data by default (there is a pragma and a compile option that can be used to make it overwrite deleted data with zeroes).,Claim
+"Thus, something removed from higher-level IndexedDB may still exist on the file providing the IndexedDB for the browser (and, once gone from there, we would have to inspect what the filesystem is doing).",Claim
+I don't you should worry at this level about access to deleted IndexedDB contents through forensics.,Claim
+"What you can do if you want to let the user delete it is to invalidate the stored data server-side, such as disabling the access token that was on IndexedDB or actually store the key symmetrically encrypted with a key quite-liberally-provided by the server until rotated.",Claim
+Having a single rule for a session timeout independent of the specific use cases makes no sense.,Claim
+Which security measures are necessary depend on what needs to be protected and on the threats.,Claim
+For example online banking requires obviously stronger security measures than ordering some food because there is much more at stake.,Evidence
+"And since stronger security often conflicts with better user experience, choosing the appropriate level is a trade-off one must consider for the specific use case.",Claim
+"Also, session timeout should not be viewed in isolation, since it is often not the only measure to protect access to an account.",Claim
+"A session might be bound to a device, so that a stolen session cannot be reused on a different device.",Claim
+"It might be bound on some kind of location, so that using it from somewhere else might require a new login.",Claim
+One might be able to distinguish between a private device (like a smartphone) and a shared device (public computer) and keep a larger session timeout for the private device since there is less risk of misuse etc.,Claim
+The benefit of renaming such HTTP headers is very small in terms of security.,Claim
+"As the OWASP correctly points out, an attacker can use all kinds of fingerprinting techniques and doesn't have to rely on the server to explicitly announce the technologies used in the backend.",Claim
+"Some languages like PHP also leave traces all over the place, e. g. in the file extension of URLs or in error messages.",Claim
+So I wouldn't spend time on removing this information.,Claim
+"It creates a false sense of security, and there are far more useful measures you can take (like hardening the webserver and the applications which are running).",Evidence
+"The only thing I would consider reasonable is to turn off those Powered-By headers and prevent the webserver from blurting out its exact version on error pages, simply because this is completely irrelevant for users.",Claim
+VPN provider can manipulate your traffic the same as your ISP can do when no VPN is used.,Claim
+"This means blocking, redirecting or modifying traffic, including injecting malware into your traffic.",Claim
+VPN is basically your new ISP in that all your traffic passes through the VPN provider.,Claim
+You just replace the trust in your ISP with trust in your VPN provider.,Claim
+"But the VPN provider also has the same limitations as an ISP, i.e.",Claim
+it can not break the additional protection offered by TLS (as in HTTPS).,Claim
+See also Is using a VPN like changing your ISP?,Claim
+and Can a VPN Provider MitM my SSL traffic without me noticing?.,Claim
+"If you have 256 bit long computer generated tokens used for authentication (generated using getrandom(2) or /dev/urandom), and you want to store sha256(token) in the database, that's fast and secure.",Claim
+You don't need a true password storage hash if your tokens are high-entropy.,Claim
+"You don't need SHA-3 or Blake-3 or anything fancy, because the hash input is short.",Claim
+"I believe the database lookup using the username to get the row with the hashed password will be slower than the ""password"" hash.",Claim
+"Don't forget to use a comparison function that is safe against timing attacks, so you definitely don't leak anything.",Claim
+One word: traffic.,Claim
+"There are a lot of people searching for this topic, and we even get people here looking to ""recover their account"" on various platforms.",Claim
+"So, with all this traffic, people will seek to profit from it.",Claim
+"Think of it like ""clickbait"".",Claim
+"They entice people to visit their site and once the visitor is there, there are many things the site might do to profit from the visitor.",Claim
+"some may attempt to infect the browser
+""human verification surveys"" gather personal details on visitors that can be sold off to advertisers
+""install this"" is a pure commission play or an attempt to infect the visitor's machine
+and advertising
+
+Companies do not pay to get their ads displayed on these sites in particular.",Claim
+They pay ad networks to distribute their ads.,Claim
+"These scam sites simply participate in the ad network to deliver the ads, just like any other site (even this one).",Claim
+"The following strike me as the main problems:
+
+Storing a long term secret (the password) on the device.",Claim
+"Not only is sha256 a poor choice for protecting a password, an attacker wouldn't even need to crack the hash because the hashed password is the credential. Not authenticating subsequent communication.",Claim
+After the initial authentication you don't seem to have any mechanism to verify the identity of the client.,Claim
+You don't mention any protection against brute force or credential stuffing attacks.,Claim
+"I'd suggest looking at using a standardized authentication protocol like OIDC and using TLS for all communication, with the client including a short term token with each request.",Claim
+"If you use Kubernetes, you can save private key as a secret.",Claim
+All containers of particular service will see it.,Claim
+"If you need to update the private key later on, you can just update the secret.",Claim
+Kubernetes will pass the secret as an environment variable to the container. Secrets are strings.,Claim
+CRS Dev-On-Duty here.,Claim
+"In general, you have multiple possibilities to deal with false positives.",Claim
+"The following tutorials and cheat sheet by our co-lead Christian Folini help a lot: https://www.netnea.com/cms/apache-tutorials/
+If you want to add a very specific tuning, I would suggest a rule similar to this:
+SecRule REQUEST_FILENAME ""@streq /sell/step3.php"" \
+""id:1001,\
+phase:1,\
+pass,\
+nolog,\
+ctl:ruleRemoveTargetById=932130;ARGS:description,\
+ctl:ruleRemoveTargetById=941100;ARGS:description,\
+ctl:ruleRemoveTargetById=941160;ARGS:description""",Evidence
+"If i am not wrong, you should be able to execute the code in main if you redirect the execution to the address of the main function by adding a JMP instruction (either unconditional or relative) with the address of main as the operand.",Claim
+This will make the instruction pointer to be inside the main function.,Claim
+"To visualize this properly, try achieving this in a x64dbg/gdb.",Claim
+"Once you reach the secret() function, change the EIP/RIP value to the address of the main.",Claim
+"Once you get the flow, try to do this programmatically.",Claim
+"Again, use the debugger to see the exact OPCODE for the âÃÃ²JMPâÃÃ´ instruction.",Evidence
+"You should not be concerned about this risk, but you can mitigate this very small risk with a little change on the steps you're using.",Claim
+"Generate a random token
+Search the database for the user
+Display a message that if the email exists, he will receive a token, flush the output buffers and close the connection.",Claim
+"Update the database and send the email if user exists, do nothing if user does not exist.",Claim
+"Up until step 3, the run time is the same, so nothing will change on the user side.",Claim
+"After that, steps 4 and 5 won't show anything to the user and he cannot infer anything about those steps.",Claim
+Your company surely has some kind of policy regarding the use of personal devices to connect to enterprise resources?,Claim
+"If you are allowed to connect to those resources via your personal device I feel like they are in all right to install an endpoint agent as well, IF they have defined it in the company policy.",Claim
+"And they should of course make sure you know about this, and inform you what they did when installing the VPN and endpoint agent.",Claim
+"Without knowing the policy it is difficult to say if you have done anything wrong, but just from a ""general"" viewpoint, as long as you didn't try to access something illegal you should be fine.",Claim
+"If this is one of their requirements for having access to enterprise resources and you don't accept it, just have them remove all their software and if need be, use a different computer for business.",Claim
+"If you manage to get a virus on to your computer, and then access your company network through the VPN you are more then likely increasing the risk of a breach.",Claim
+"Say that a keylogger finds it way to your computer via your personal email, the next time you connect to the VPN all those credentials will go to the attacker as well.",Claim
+"It is just logical (and necessary) for the company to protect its assets, especially with remote work getting more and more common.",Claim
+"Authentication:
+It's as secure as your authentication method.",Claim
+Accepting even predefined commands to be run as root may have some knock on effect which wasn't expected at engineering time.,Claim
+The server should still authenticate the client.,Claim
+This could be done using mutual TLS so no user interaction is required but they still should be authenticated.,Claim
+"Worst case this application could become SSH into your server, it should be treated as such.",Claim
+"Least Privilege:
+Servers should be run as least privilege.",Claim
+"If there is ever an exploit in the server's code or one in the platform (Python, C, *nix) remote code execution or escape to shell will be pretty bad if the server is run as root.",Claim
+Servers should be evaluated for what permissions are actually needed and run at a level which gives them exactly that many permissions.,Claim
+"Here are a couple of references for you. BBB Scam Alert:
+
+...",Evidence
+"These quizzes appear to be meaningless, but the intent behind them is to collect information.",Claim
+"For example, questions like:  ""What was the first car you owned?""",Evidence
+"âÃÃºWhat is your mother's maiden name?âÃÃ¹ or âÃÃºWhat is the name of the street you grew up on?âÃÃ¹  These are common security questions for insurance, banking and credit card accounts.",Evidence
+"Sharing this information can lead to accounts being hacked, and personal and financial information being stolen.",Claim
+"...
+
+Ukrainian hackers used quizzes
+
+...",Claim
+"Working out of Kiev, Ukraine, Andrey Gorbachov and Gleb Sluchevsky allegedly lured Facebook users to connect their accounts to a range of online quiz apps with names like, âÃÃºDo you have royal blood?, âÃÃºYou are yin.",Evidence
+"Who is your yang?âÃÃ¹ and âÃÃºWhat kind of dog are you according to your zodiac sign?âÃÃ¹
+Once users connected their Facebook and other social media accounts
+they were asked to install what Facebook described as âÃÃºmalicious
+browser extensionsâÃÃ¹ that essentially allowed the alleged hackers to
+pose as the affected users online.",Evidence
+"...
+... Last March, it emerged that a developer working on behalf of Cambridge Analytica, a controversial data firm that went on to work for Donald TrumpâÃÃ´s 2016 presidential campaign, had collected data on tens of millions of American Facebook users without their explicit knowledge.",Evidence
+The developer had used an online quiz app that connected to Facebook to gather the data. ...,Claim
+OTP is indeed a lot more secure than regular passwords.,Claim
+"However, one example that I could counter that would be ""What if you lost your device?""",Claim
+How would you prove that it is you who are the one that has the access to the account?,Claim
+"How would you prove to the other programs, such as your email, telling that it's you who's trying to log into your account?",Claim
+"Trying to figure this out would take a massive amount of effort & money, for both user and company, to remediate this.",Claim
+"For multi-factor authentications, entering an information that only you know (information that you constantly know) single-handedly helps improve security.",Claim
+"Even if you lose access to OTP (Password + OTP), you still have some information that you entered prior to creating your account to help back up your claim.",Claim
+Is it a bad idea to offer users to replace passwords with OTP?,Claim
+"Overall, it's not a bad idea to replace passwords with OTP, guaranteed if they are trusted to not lose the IoT devices.",Claim
+"However, the general consensus is to not trust the users at all.",Claim
+"If passwords are not used, does 2FA (double-OTP instead of single-OTP) offer substantial benefit?",Claim
+"Even though it takes a lot more effort, which wastes time for users,
+I believe it should help a lot because if website don't implement the security system to keep track and suspend accounts with a specific number of failed attempts, it is possible to brute force the account with 1 OTP until they keep guessing it correctly.",Claim
+"Edit: The basic rule of 2FA is also based off of the user providing 2 out of the 3 things: ""Something you Know, Something you Have, Something you Are"".",Claim
+Just purely having a OTP without any of the 2 other rules will defeat the purpose of security. Source: https://auth0.com/learn/two-factor-authentication/,Evidence
+NIST uses general term look-up secret authenticator.,Claim
+"""A look-up secret authenticator is a physical or electronic record
+that stores a set of secrets shared between the claimant and the CSP.",Evidence
+"The claimant uses the authenticator to look up the appropriate
+secret(s) needed to respond to a prompt from the verifier.",Evidence
+"For
+example, the verifier may ask a claimant to provide a specific subset
+of the numeric or character strings printed on a card in table
+format."" Source: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf chapter 5.1.2",Evidence
+"Hash functions output binary data, usually as a byte array.",Claim
+"This cannot be displayed correctly, therefore, you need encoding.",Claim
+"Transmitting binary data can create problems, especially in protocols that are designed to deal with textual data.",Claim
+"To avoid it altogether, we don't transmit binary data.",Claim
+Many of the programming errors related to encryption on Stack Overflow are due to sending binary data over text-based protocols.,Claim
+"Most of the time this works, but occasionally it fails and the coders wonder about the problem.",Claim
+The binary data corrupts the network protocol.,Claim
+"Therefore hex, base64, or similar encodings are necessary to mitigate this.",Claim
+Base64 is not totally URL safe and one can make it URL safe with a little work.,Claim
+"In another way, character encodings are reversible and don't require encryption keys.",Claim
+This has nothing to do with security; it is about visibility and interoperability.,Claim
+You give up. DRM doesn't work. It's fundamentally broken.,Claim
+"The idea is that someone should not be able to view the data, but should be able to view the data.",Claim
+"That's just not possible; to play the data to show it on a screen, you have to be able to understand it.",Claim
+"If you understand it, you can make copies to whatever format you want.",Claim
+"Hollywood attempted to introduce trusted hardware, so that the entire hardware chain, including the display, is trusted, and encryption is used everywhere.",Claim
+"I mean, if you go to The Pirate Bay, you won't find any movies released in the last five years? Nope.",Claim
+"Heck, you can even buy a HDCP stripper on amazon or ebay for 20USD.",Claim
+DRM doesn't stop someone from copying your content.,Claim
+It may however make legitimate customers pissed because they can't play back the content they paid for. </rant>,Claim
+Is it possible to generate a file with a given sha256sum checksum? Yes.,Claim
+It is possible to generate an input with the given checksum.,Claim
+(See answer to your last question).,Claim
+"That is, reverse the process of a sha256sum checksum.",Claim
+"That is, if we have a checksum, can we generate txt file data (need not be original) whose its checksum is equal to the required checksum?",Claim
+"No, sha256 is not reversible.",Claim
+"Yes, more than one input can generate the same output.",Claim
+"Since sha256 is a hashing algorithm, it is possible for more than one input to generate the same output.",Claim
+Sha256 generates a finite number of outputs (2^256) given an infinite number of possible inputs.,Claim
+"If you somehow managed to find an input that generates a given checksum, there is no guarantee that it is the original input that generated the checksum in the first place.",Claim
+This is called a collision and is a feature of hashing algorithms in general.,Claim
+"Since 2^256 is a large number, the possibility for collisions is small.",Claim
+That is why sha256 is very useful as a check for data integrity.,Claim
+"For example, when you download a file, many sites will give you a sha256 checksum to validate the integrity of your download.",Evidence
+"If bits get corrupted during transfer, the algorithm will almost certainly produce a very different checksum from the original.",Claim
+"It is not a guarantee that the data is not corrupt, however, but your confidence can be extremely high it is not.",Claim
+"Wikipedia defines secrecy as âÃÃºthe practice of hiding information from certain individuals or groups who do not have the ""need to know"", perhaps while sharing it with other individuals.âÃÃ¹  Thus, a secret is information that is intended to be restricted to people with the need to know.",Evidence
+How much effort you need to use to protect secrets depends on what the consequences of unintended exposure are.,Claim
+"When you consider the consequences of exposure, you may want to think about things beyond the data that these accounts control.",Claim
+"For example, if these credentials are used as part of a brute force or other attack on the platform, or to transmit illegal or unacceptable (e.g., hateful, defamatory, pornographic) information, then your company might be associated with the bad acts, which might have reputational or legal consequences.",Evidence
+"Similarly, in such a case, you might also be prohibited from creating new accounts or otherwise have restricted access in the future, which might impact your ability to use and test your integrations.",Claim
+"Personally, I find it a prudent course of action to always keep credentials in some sort of secret store or password manager.",Claim
+"This encourages good security practices and avoids staff needing to consider the consequences of exposure in depth, since the rule is simple: if it's a credential, it needs to be stored securely.",Claim
+"One approach that could be helpful is to use some sort of shell or bastion host which has access to certain development and QA secret stores that can be used for this purpose, and then write a tool which can export those as needed into the user's test machine (ideally, but not necessarily, in some sort of encrypted form).",Claim
+"I've worked at places where VPN certificates are generated and transferred in this way, and it makes provisioning them very easy.",Claim
+"If the credentials change, a user can update them with little work, and the risk of exposure is minimized.",Claim
+"Similarly, a password manager could be helpful in this regard if the credentials are partially or primarily browser-based.",Claim
+"If your company's password manager has a command-line tool, then this could also work for automated tasks.",Claim
+"Only the relevant users would have access to the specific vaults, and they would not be pasted in chat where they could be easily exposed.",Claim
+"First of all, the status code 200 doesn't imply that the request was successful in regards to passing a variable successfully, correct?",Claim
+"correct
+
+How would I check then, if such a probe/attack was successful?",Claim
+Do you have Wordpress installed?,Claim
+"if yes, you can try this request yourself and see what it returns.",Claim
+"You don't need to worry about it, if you dont have Wordpress installed.",Claim
+Would I manually need to go into my files and scan through the code if such a request would do something malicious?,Claim
+"In most cases you just need to know what version you are running of (1) webserver, and (2) web-framework like Wordpress, and whether the version you are running have any exploitable vulnerabilities.",Claim
+"If not, you dont need to worry about.",Claim
+If you are running old unpatched software - here is your problem.,Claim
+"This particular request appears to show user list, so by logic next step would be to brute-force or password spray Wordpress admin account, you can check logs if you have a lot of brute-force activity.",Claim
+"Lastly, what was the bot (I assume it is a bot) trying to achieve with this request specifically?",Claim
+Is it trying to get some data about WordPress users?,Claim
+"Most likely the bot is some vulnerability scanner (like Nessus), it is trying thousands of various requests, known to leak information about your system, and collects information about your system's vulnerabilities for further exploitation.",Claim
+VPNs have their limitations.,Claim
+"A VPN will conceal what data you send, and where you send it.",Claim
+"It will not conceal when you send it, nor how many bytes you sent.",Claim
+The same applies to what you receive.,Claim
+"To send an e-mail, it is necessary to use an internet protocol called SMTP which specifies exactly what data must be sent and received.",Claim
+"If you have access to the network logs for the phone and the mobile operator, you can then observe if the phone sent a series of data packets at the right time and of the right size to create the e-mail.",Claim
+The wikipedia page for SMTP shows an example with the phone (client) sending six messages and the e-mail content and the server sending eight messages back.,Evidence
+"There should also be a ""login"" step preceding these messages which establish the sender's identity and another layer of encryption.",Claim
+This takes another five or six messages back and forth.,Claim
+So - the police can check if a specific phone could have used a VPN to send a specific e-mail.,Claim
+"It does not prove that phone did, as those dozen-or-so messages could have been something completely different that just happened to have exactly the right number of bytes.",Claim
+"If you have more e-mails though, the chance of it all being innocent co-incidences really declines.",Claim
+"Additionally, the e-mail company does know the e-mail came from via a specific VPN provider.",Claim
+The data logs for the phone will show that the phone was connected to that specific VPN.,Claim
+"As a general rule, you don't.",Claim
+Private keys aren't supposed to leave the device where they're generated.,Claim
+"If RSA keys are too expensive to compute, you might be able to make it work with elliptic curve / Ed25519 keys, assuming there's a suitable way to use them for your use case, or perhaps use more (or more powerful) devices to compute them.",Claim
+"However, if you must, there are a few options.",Claim
+"One is to use a physical connection, such as USB or a direct network link, to another device (possibly special-purpose, or possibly a full PC).",Claim
+"This provides the greatest protection against remote attacks, and local / physical attacks on either device can be handled together with the same security measures.",Claim
+Another option is trust in modern secure network protocols.,Claim
+"SSH (use the latest version and modern ciphers, and have trusted keys on both ends, you must reject unrecognized keys) or TLS (ideally version 1.3 or whatever is newest, ideally with mutual authentication, and ideally using pinned public keys / certificates) are both very secure.",Claim
+"There's also IPSec, which I know less about but I believe is generally considered secure, and various other protocols.",Claim
+"Once configured, this could be as simple as an HTTPS GET request.",Claim
+"However, secure protocol implementations are very tricky things - there have been many vulnerabilities found in all the popular ones - even when the protocols and primitives are themselves fine.",Claim
+It's definitely better to avoid network exposure entirely if possible.,Claim
+The ISP will know the IP address of the initial receiver.,Claim
+"That's unavoidable, because the ISP has to deliver your message somewhere.",Claim
+"If your VPN uses one known IP address, then your ISP can know that you are sending to a VPN IP address (99.99% likelihood for VPN traffic, 0.01% that your own computer is sending to the wrong IP address).",Claim
+"If the VPN server has multiple IP addresses, your ISP could know them all.",Claim
+"If your ISP doesn't recognise the IP address, they can look at the structure of your message.",Claim
+"They shouldn't be able to gain any knowledge about the real message other than the size, but they may be able to conclude that your message is a VPN message sent to an unknown VPN server and be right very often.",Claim
+"Last, if all your traffic goes to one IP address only, then that fact alone makes it likely that you are using a VPN.",Claim
+"And if the ISP cannot make sense of the message because it is encrypted, and it doesn't look like https, then it is likely to be VPN.",Claim
+Pick a VPN server that doesn't use a known IP address and a protocol that can be recognised.,Claim
+"(So nothing technical, just pick the right VPN server).",Claim
+And the protocol should be such that it doesn't look like anything encrypted.,Claim
+"For example, you could map an encrypted message to grammatically correct sequence of English words and back.",Evidence
+Or wrap the VPN message into something that looks like SSL.,Claim
+That's something the VPN server would have to support.,Claim
+And use different IP addresses throughout the day.,Claim
+"I recommend using an address in one of the TEST-NET networks (192.0.2.0/24, 198.51.100.0/24, and 203.0.113.0/24) documented in RFC 5737 and RFC 5735 (link below).",Evidence
+Pay attention to the Operation Implications section.,Claim
+These addresses should be non-routable and filtered.,Claim
+Using an address in the 127.0.0.0/8 range would also work if the address isn't assigned to the loopback.,Claim
+More info on Special Use IPv4 Addresses is in RFC 5735,Evidence
+Remember that availability is a security requirement.,Claim
+"If you are a bank and your security policy prevents a customer from paying his rent, that is a failure of your security policy.",Claim
+"Of course there are tradeoffs, but you have to at least consider a hit to availability as something to be avoided.",Claim
+The appropriate balance depends on the risks.,Claim
+"For this, it doesn't matter whether it was indeed my user's data or someone else's data that appeared in the breach.",Claim
+I'd suggest that is actually not true.,Claim
+"If it is someone else's data, the response you suggest would almost certainly be disproportionate.",Claim
+"There is no reason to expect that an attacker would associate that new, and presumably very rare, leaked password with this account.",Claim
+"They'd be more likely to try ""Password"" or ""monkey"" just because that has a better expectation of success.",Claim
+"Even if they're only trying new leaks, you'd expect to notice them trying many thousands (or, ten and then you block them) of newly leaked passwords before getting close.",Claim
+"On the other hand if the password leak was associated with the individual, none of that works.",Claim
+You couldn't expect any warning shots.,Claim
+"As such, locking them out and contacting them out-of-band to verify their identity and reset their authentication is exactly what you would have to do.",Claim
+"If you don't know which case is which, you can make a probabilistic risk argument in favour of treating it as serious.",Claim
+Just remember to count the cost to availability and develop a smooth recovery process.,Claim
+No CSP means no restrictions.,Claim
+Any CSP is better than no CSP.,Claim
+"I like to read a CSP directive img-src ___ or frame-src ___ out loud as ""images/frames are not allowed except from ___"".",Claim
+"So this CSP:
+Content-Security-Policy: img-src https://example.com
+
+would be read out loud as ""images are not allowed except for from https://example.com"". What about frames?",Evidence
+"They are not specified, therefore they are allowed.",Claim
+Typically a page will set a CSP will set a very restrictive default-src and then specifically override that to allow the external resources that it needs.,Claim
+"Content-Security-Policy: default-src 'self'; img-src https://example.com
+
+which I read out loud as ""Things are only allowed from self, except for images which are not allowed except for from https://example.com""
+If a CSP directive (ex.",Evidence
+: frame-src) is not specified (and default-src is also not specified) then no restrictions are applied.,Claim
+That means that no CSP is equivalent to an empty CSP where everything is allowed (nothing is blocked).,Claim
+"I'm assuming by ""session ID"" you mean the value in a cookie or bearer token that is transmitted to the server with every authenticated request, and is used as the key in a server-side lookup table of authenticated user sessions with associated users that have some non-overlapping permissions.",Claim
+"This absolutely sounds like a session fixation risk, especially the third scenario.",Claim
+"The attacker either creates or discovers the session ID on one device (possibly a shared device), then logs out, copies the session into their own device, and waits for somebody else to log into their own account on the compromised device.",Claim
+"When they do, the attacker is logged in too.",Claim
+"Scenario 2, and to an extent scenario 1, depends on whether the site will keep using a preexisting session ID.",Claim
+"If the server accepts an existing session ID without changing it, then you can plant a session ID on one device, plant the same on your own device, and wait for somebody to use the compromised device.",Claim
+"You might only get one victim (in scenario 2, where the ID is changed after logout)
+Note that scenario 1 is only slightly vulnerable if the session ID changes when a new user logs in (the thing explicitly ruled out in scenario 3).",Claim
+"However, even in that case, scenario 1 (and also 2) is potentially vulnerable because, since the session ID persists after the user logs out, an attacker who can access a device last used by Alice (after she signs out) can steal her session ID, and wait for her to log in again (maybe it's her device, so she's the primary user?).",Claim
+"It is definitely best practice to change the session ID every time the authentication state changes (any user logs in or out, a session expires, etc.)",Claim
+"rather than ever reusing a session ID that the client sends you, as that ID may have been compromised.",Claim
+"The session cookie is base64-encoded JSON, which is apparent by it beginning with ey....",Evidence
+"When decoded, it reveals three parameters: IV, value and mac.",Claim
+"IV is a cryptographic term, ""initialization vector"", and is a small bit of data to be prepended to a ciphertext.",Claim
+It is necessary in some modes of opertion of block ciphers to decrypt the content.,Claim
+"In this payload, it's base64-encoded random bytes, as would be expected.",Evidence
+"MAC is also a cryptographic term, ""message authentication code"", and is a sort of ""keyed hash"", intended to verify a message has not been modified (by someone who does not possess the key).",Claim
+"In this case, it's a hash. Nothing else is known.",Claim
+Value could be anyone's guess.,Claim
+It looks like base64-encoded bytes and might be a ciphertext.,Claim
+So what do these values mean?,Claim
+It seems to be some encrypted message.,Claim
+"Value is the ciphertext, IV needed for decryption and mac ensures the message is not tampered with - probably because the message was not encrypted with ""authenticated encryption"".",Claim
+The purpose is ripe for speculation.,Claim
+"It could be part of a Command and Control network, where infected devices contact this host, receive new instructions encrypted, then decrypt and execute them.",Claim
+"Other than that, I don't see any particular use-case for this.",Claim
+This is a theoretical technique and may not be practical without putting in sufficient effort to develop and test your own detection tool.,Claim
+I'm leaving this here because it is a possible technique and it works.,Claim
+"You may be able to fingerprint the MAC address, and in some cases, even discover the original, unspoofed address.",Claim
+"This would allow you to match two spoofed MAC addresses as belonging to the same machine, and apply a block to that new MAC address.",Claim
+"From a research paper on the subject:
+
+We present several novel techniques to track (unassociated)
+mobile devices by abusing features of the Wi-Fi standard.",Evidence
+"This shows that using random MAC addresses, on its own,
+does not guarantee privacy.",Evidence
+"First, we show that information elements in probe requests
+can be used to fingerprint devices.",Claim
+"We then combine these
+fingerprints with incremental sequence numbers, to create
+a tracking algorithm that does not rely on unique identifiers such as MAC addresses.",Evidence
+"Based on real-world datasets,
+we demonstrate that our algorithm can correctly track as
+much as 50% of devices for at least 20 minutes.",Evidence
+"We also
+show that commodity Wi-Fi devices use predictable scrambler seeds.",Claim
+"These can be used to improve the performance of
+our tracking algorithm.",Claim
+"Finally, we present two attacks that
+reveal the real MAC address of a device, even if MAC address randomization is used.",Claim
+"In the first one, we create fake
+hotspots to induce clients to connect using their real MAC
+address.",Claim
+"The second technique relies on the new 802.11u
+standard, commonly referred to as Hotspot 2.0, where we
+show that Linux and Windows send Access Network Query
+Protocol (ANQP) requests using their real MAC address.",Claim
+"In Theory
+According to the C reference, it is entirely valid for a compiler to install malware on your system, should it encounter undefined behavior, such as using memcpy() on overlapping memory areas.",Evidence
+"Such a compiler, while clearly being malicious in nature, would still be standard compliant.",Claim
+"The resulting binary, when run, could also cause your hard drive to be erased or the disk to be encrypted by ransomware.",Claim
+"Again, all of this would be standard compliant.",Claim
+"In Practice
+In practice, ""undefined behavior"" usually means that something acts one way on one platform, and another way on another platform.",Claim
+"For example, imagine the following memory area, where would like to copy 4 bytes from src to dst:
+0 A 5 C B B 1 7 2 0 4 7
+  ^-----^       ^-----^
+  src           dst
+
+The resulting memory will look like this:
+0 A 5 C B B 1 7 A 5 C B
+
+Now, imagine if these overlapped instead, as follows:
+0 A 5 C B B 1 7 2 0 4 7
+        src ^-----^
+                ^-----^ dst
+
+How would the resulting memory look like?",Evidence
+"The result will change, depending on how exactly memcpy() is implemented.",Claim
+"I'm certain if you gave a class of students a task of implementing that function themselves and tried it on this example, you'd get different results with each implementation.",Claim
+"So instead of trying to define how an implementation has to act when encountering such a situation, the standard just says it's undefined. Anything goes.",Claim
+"Though in practice, ""anything goes"" will mean that the compiler will just do it in a certain way and that's how it is.",Claim
+"And if you rely on the specific way the compiler does it, and it changes in the future, that's not a bug, because you're not supposed to rely on undefined behavior.",Claim
+"An ongoing in-joke among C and C++ programmers is to refer to undefined behavior as ""nasal demons"", because ""The C compiler can do anything, even make demons fly out of your nose.""",Claim
+"And this actually illustrates the issue very well: While it would be standard-compliant to make demons come out of your nose, it's also very unlikely that a compiler would actually do that.",Claim
+"Most programmers want to write sensible code[citation needed], so it's very unlikely that someone will deliberately try to harm the security of your computer, merely because of undefined behavior.",Claim
+"After all, they still wrote code to harm your computer, and that usually doesn't go too well for someone's reputation in the open-source community.",Claim
+The motivation for the University of Michigan seems to be to encourage the use of passphrase / diceware.,Claim
+"See Guidelines for a Secure Password, where 3 of the 4 tips are related to that.",Evidence
+"In practice, I'd assume that most university users do need to remember their passwords and can't rely on password managers (the 4th tip).",Claim
+"Then a 15-char password becomes difficult to remember, a 15-char passphrase is reasonable.",Claim
+There has been a study that shows that users don't remember passphrases better than passwords with the same entropy.,Evidence
+"But passphrases with the same entropy will be longer, reaching the 15 char minimum quicker.",Claim
+"As for usability vs security regarding password complexity, there are numerous opinions:
+
+8 characters is too short for offline bruteforce attacks (they recommend 16 chars).",Evidence
+another opinion that 8 chars is too short (they recommend at least 12 chars).,Evidence
+"NIST recommends at least 8 characters, though the exact minimum is dependent on the thread model.",Evidence
+"They also recommend against complexity requirements (special character, etc).",Evidence
+"Especially with the recommendation not to use complexity requirements (because they don't increase security by a lot, but do reduce usability significantly), an 8-char password may be bruteforced fairly quickly, even remotely (think password and 12345678).",Evidence
+Requiring a 15-char password will help here.,Claim
+"With guidance towards passphrases, usability isn't impacted by the length.",Claim
+Your ISP cannot censor the internet with anything finer than entire DNS hostname or IP address granularity.,Claim
+They cannot modify Google search results or interfere with your ability to use Google short of blocking Google entirely.,Claim
+They cannot modify the content of pages you visit.,Claim
+"Of course, the above is all under some basic key assumptions:
+
+The url you're visiting is https:// not http://.",Claim
+"In 2022 this should be a given, but there are still a very small number of sites that's not the case for.",Claim
+You did not click through any invalid certificate warnings.,Claim
+This is very unlikely to happen - the ISP is not going to attempt stuff like this because plenty of users will not click through and the ISP will quickly be caught and get in trouble for trying.,Claim
+"You did not install any software provided by your ISP to put backdoors on your computer, often marketed as ""malware protection"" or ""parental control"" software.",Claim
+This kind of thing could very well setup your computer to accept fraudulent certificates the ISP (or rather some scummy partner of theirs) uses to impersonate sites and modify their contents.,Claim
+Never install software from an ISP - and that includes VPNs!,Claim
+Because VPNs are a second ISP.,Claim
+"Any legitimate VPN will just give you configuration/credentials to install it through your operating system's normal VPN mechanisms, not custom branded software to install.",Claim
+"Unless you have installed sketchy software like what I mentioned above, I find it extremely unlikely that you're seeing any sort of censorship by your ISP or any other party.",Claim
+"More likely, Google just delisted or buried whatever result you're looking for, for their own reasons.",Claim
+You could try searching from somebody else's computer/network to confirm this.,Claim
+"Keep in mind that by default Google uses personalized search results, so it's possible that if you still have this on, their personalization for you changed such that they no longer think the same things are relevant to you.",Claim
+I would highly recommend turning off personalized results because of how frustrating it is when stuff like this happens as a result.,Claim
+"Ethereum-style smart contracts are entirely public and immutable, whereas classic web APIs can have private data, private logic, and can be updated at any time by the server operator.",Claim
+"Thus, we have different security goals in each setting.",Claim
+The important property of a smart contract is that it works exactly as expected.,Claim
+"Since smart contracts might control significant funds, there is substantial motivation in applying formal methods and static analysis to verify correctness as far as possible.",Claim
+"You are correct that there is already a large body of work in that field, but there's always room for further developments and for applying existing techniques to new programming languages and new problems.",Claim
+You are potentially wrong in assuming that smart contracts have entry points and private data.,Claim
+"Anyone can run the smart contract and observe its internal state, unless cryptographic techniques are used to protect the data.",Claim
+"In principle, anyone could also falsify the output of the smart contract, but that is useless since the Blockchain uses a consensus mechanism.",Claim
+"If we look at the classic C-I-A triad of security goals, Ethereum-style smart contracts do ensure the integrity of computations (via the consensus mechanism, e.g.",Claim
+proof of work or proof of stake) and their availability (through the distributed blockchain design).,Claim
+But they do not afford confidentiality except through the usage of cryptographic techniques.,Claim
+The CSP standard explicitly defines default-src as a fallback if script-src-elem and script-src are not defined.,Claim
+"So either your CSP header isn't correctly served, or this is a browser-specific problem.",Claim
+"For the latter, there are a number of possible causes.",Claim
+"A browser extension which is messing with the CSP mechanism, as indicated by the Stackoverflow topic you've found.",Claim
+"A bug in the browser itself
+An incomplete CSP implementation -- rather unlikely given this is a very basic feature
+
+If you cannot find the cause, go through the usual debug steps.",Claim
+Create a minimal example which contains only the relevant code and nothing else. Use different browsers.,Claim
+Check whether they have the same issue.,Claim
+"If they do, double-check that the correct CSP header is served.",Claim
+"If it's only one browser, disable all browser extensions.",Claim
+Check if the problem persists. Update your browser.,Claim
+Check if the problem persists.,Claim
+"If the issue is still there, file a bug report for the specific browser.",Claim
+"... what is stopping a malicious file from adding an entry to \etc\hosts that points ""example.com"" to a phishing clone of a website?",Claim
+"Modifying /etc/hosts so that it affects the victim means that this modification needs to be done at the system of the victim themselves, i.e.",Claim
+it has no effect if this change is just done at the attackers system.,Claim
+"If the attacker has the privileges to alter the hosts file at the victims system then likely other harm can be done too, like adding an attacker controlled certificate authority as trusted to the browsers on the system.",Claim
+"Once this is done the attacker can issue whatever certificates they like with their own certificate authority, i.e.",Claim
+there is no need to get such certificates from a publicly trusted CA.,Claim
+This makes it possible that the attacker uses certificate issued for another domain but trusted by the victim.,Claim
+In other words: TLS/HTTPS can no longer provide the usual protection if the attacker has managed to compromise the victims system.,Claim
+Note that there are other methods to manipulate DNS lookups which don't require compromise of the victim system.,Claim
+The attacker might for example control the DNS server used by the victim or might be able to hijack DNS queries and answer these themselves (DNS spoofing).,Evidence
+Such attacks can be achieved if the attacker has sufficient control over the network used by the victim.,Claim
+In this scenario the attacker has no control over the trusted root CA used by the victim.,Claim
+"The attacker can also not get a certificate for a foreign-controlled domain from a public CA, unless they manage to either compromise this domain or compromise the CA.",Claim
+Using the IP address instead of the domain name on the Tor network is less secure.,Claim
+"When you access the domain name using TLS, the certificate is inspected by your browser, and it will only connect if the certificate is valid and trusted by your browser.",Claim
+"Even if the Tor exit node or the gateway is malicious, they have no way to tamper with the data and fool your browser because they don't have the private key of the site you are accessing.",Claim
+"The site hosts only one site
+The certificate is generated for the domain, not the IP, so your browser will complain about an invalid certificate.",Claim
+"You will have to inspect the certificate to see if it's a valid certificate for the site you want to access, validate if the domain points to the IP you are connecting, and then accept to access the site. So use the domain.",Claim
+Taking over the domain is not something that is done all the time.,Claim
+And TLS will protect you.,Claim
+"The Tor exit node may be malicious or it may be under attack
+
+Using the domain and validating the certificate (this is done automatically by the browser) protects against malicious activities from the node or any attacker.",Claim
+"There may some sort of global attack on the DNS servers
+
+A global attack on DNS is something that is not going to be executed, and even if it does, it will be so noisy that everyone on the internet will be talking about it.",Claim
+"There are some localized attacks on DNS infrastructure from individual ISPs all the time, but not something on a global scale.",Claim
+"There are attacks that change the DNS settings on the computer or the router to point to a tainted resolver, but those are not global.",Claim
+"You can protect yourself from attacks on the router or your ISP by setting the DNS address by hand, using the server from a large entity (like Google or Cloudflare).",Claim
+How does it fare in comparison with using a Tor address of this provider?,Claim
+It's better for your privacy to use the Tor address because all your traffic never leaves Tor network.,Claim
+"There will be no malicious exit nodes nor compromised gateways, no DNS provider will know you are accessing anything.",Claim
+"If the attacker has full physical access and BIOS/EFI access they may as well install their own MOK certificate and modify your bootloader/install their own boot loader, so if you have reasons to believe it has happened, you need to reset secure boot certificate storage.",Claim
+"So here's another caveat, EFI/BIOS password.",Claim
+if you install a BIOS password it's near impossible to do anything nefarious as it's not dependent on the internal CR2032 battery almost all PCs and most laptops use to keep the internal clock running and also for keeping BIOS/EFI settings after you unplug the power cord.,Claim
+But yes in the end UEFI boot is more secure when Secure Boot is enabled/enforced and proper certificates.,Claim
+With the BIOS boot all the bets are off.,Claim
+If you have unpartioned space it's possible to insert a fake OS which will ultimately boot your Windows installation and install a keylogger or any other rootkit.,Claim
+"However I've not heard of such attacks yet, maybe it's not worth it or it's exceptionally difficult.",Claim
+"If you publish your password-secured private key, you are reducing its security to the strength of that password since anybody can conduct an offline attack to find it and therefore gain access to your key.",Claim
+A typical RSA key has 4096 bits of entropy to it.,Claim
+"Bits are powers of two, so 8 bits (2âÃâ = 256 possibilities) is quite a bit larger than twice 4 bits (2âÃÂ¥ = 16 possibilities).",Evidence
+"A single random character in a password has 94 possibilities, so a sixteen-character password has an entropy of logâÃÃ(94Â¬ÏâÃâ) = 104 bits.",Evidence
+Are you content reducing your security from a nigh-uncrackable 4096 bits down to a much simpler 104 bits?,Claim
+Let's say you'll just use a longer password.,Claim
+"Since the password itself is stored with AES256, a 256-bit hash, you can't exceed that strength.",Claim
+The highest entropy code you can store is therefore logâÃÃ¢âÃÃ(2Â¬â¤âÃÂµâÃâ) = 39 characters.,Evidence
+"That's ""probably"" safe (assuming you're using random charactersâÃÃ®not arbitrary, not obscure!",Claim
+"), but why reduce your security from 4096 down to a maximum of 256?",Claim

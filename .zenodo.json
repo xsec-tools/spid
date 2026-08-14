@@ -1,0 +1,32 @@
+{
+  "title": "SPID: A Security Principle Instantiation Detector for Security Explanation Text",
+  "description": "<p>SPID labels each sentence-level unit of a security explanation with the Basin et al. security design principle it instantiates, abstaining when the text only describes a mechanism. A unit instantiates a principle when it argues that the design property the principle names improves security, not merely when it mentions a related concept.</p><p>The tool combines a fine-tuned RoBERTa Claims-Evidence classifier with a three-stage principle detector built on Meta-Llama-3-70B-Instruct. Separating abstention from classification across three inference calls is the central design decision: a single call that bundles the two produces a 66.7% false positive rate on principle-free text.</p><p>This record contains the pipeline code, the Stage 1 to Stage 3 prompts and principle definitions, and the 1,798-row synthetic evaluation set with its ground-truth labels. Corpus inputs are included where licensing permits. The Reddit ELI5 corpus is not redistributed.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Brown, Caitlin",
+      "affiliation": "Durham University"
+    },
+    {
+      "name": "Morisset, Charles",
+      "affiliation": "Durham University"
+    }
+  ],
+  "keywords": [
+    "explainable security",
+    "security design principles",
+    "argument mining",
+    "natural language processing",
+    "security explanation",
+    "XSec"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/xsec-tools/spid",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
